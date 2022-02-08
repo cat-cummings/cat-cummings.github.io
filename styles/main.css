@@ -7,6 +7,22 @@
     box-sizing: border-box;
 }
 
+@media only screen and (max-width: 600px) {
+     .welcome {
+         min-width: 100%;
+     }
+
+     .row {
+         flex-wrap: wrap;
+     }
+
+     .blog-box {
+         min-width: 100%;
+     }
+}
+
+
+
 body {
     padding: 0;
     margin: 0;
@@ -107,9 +123,10 @@ body {
     justify-content: center;
     align-items:center;
     margin: 20px;
+    height: 150px;
     width: 20%;
-    height: 140px;
     background-color: #53567C;
+    max-width: 150px;
 }
 
 .blog-box a:hover {
