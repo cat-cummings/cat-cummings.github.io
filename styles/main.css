@@ -104,11 +104,15 @@ body {
 
 .blog-box {
     display: flex;
-    justify-content: space-between;
-    text-align: center;
-    margin: auto;
+    justify-content: center;
+    align-items:center;
+    margin: 20px;
     width: 20%;
-    height: 20px;
+    height: 140px;
     background-color: #53567C;
-    padding-bottom: 50px;
+}
+
+.blog-box a:hover {
+    color: #4E4C34;
+    cursor: pointer;
 }
