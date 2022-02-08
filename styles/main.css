@@ -12,4 +12,70 @@ body {
     margin: 0;
     background-color: #7C7953;
     font-family: Outfit, helvetica, arial, sans-serif;
+    font-size: 1.2rem;
+    color: white;
+}
+
+.h1 {
+    text-transform: lowercase;
+}
+
+.main-nav ul{
+    display: flex;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.main-nav  li{
+    text-transform: lowercase;
+    color: inherit;
+    padding: 1rem;
+}
+
+.main-nav a{
+    text-decoration: none;
+    color: inherit;
+}
+
+.main-nav a:hover {
+    color: #4E4C34;
+}
+
+.main-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 120px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 40px;
+}
+
+.main-header .stack-name {
+    flex: 1;
+    order: 3;
+    text-transform: lowercase;
+}
+
+.main-header .name-cat {
+    flex: 1;
+    order: 2;
+    text-align: end;
+    margin: 0;
+}
+
+.main-header .name-cummings {
+    flex: 1;
+    order: 3;
+    text-align: end;
+    margin: 0;
+}
+
+.main-nav {
+    flex: 1;
+    order: 1;
 }
