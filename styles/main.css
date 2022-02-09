@@ -7,7 +7,7 @@
     box-sizing: border-box;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 660px) {
      .welcome {
          min-width: 100%;
      }
@@ -125,11 +125,11 @@ html, body {
     display: flex;
     justify-content: center;
     align-items: center;
+    text-align: center;
     margin: 20px;
-    height: 150px;
-    width: 20%;
+    height: 250px;
     background-color: #53567C;
-    max-width: 150px;
+    width: 250px;
 }
 
 .blog-box a:hover {
@@ -137,7 +137,7 @@ html, body {
     cursor: pointer;
 }
 
-p {
+.blog content p {
     text-align: justify;
 }
 
