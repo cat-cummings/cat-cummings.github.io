@@ -135,3 +135,11 @@ body {
     color: #4E4C34;
     cursor: pointer;
 }
+
+p {
+    text-align: justify;
+}
+
+img {
+    max-width: 500px;
+}
