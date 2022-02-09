@@ -14,10 +14,11 @@
 
      .row {
          flex-wrap: wrap;
+         margin: 0;
      }
 
      .blog-box {
-         min-width: 100%;
+         min-width: 90%;
      }
 }
 
@@ -112,16 +113,17 @@ body {
 }
 
 .row {
-    width: 100%;
     display: flex;
     margin-bottom: 20px;
     justify-content: space-between;
+    max-width: 1000px;
+    margin: auto;
 }
 
 .blog-box {
     display: flex;
     justify-content: center;
-    align-items:center;
+    align-items: center;
     margin: 20px;
     height: 150px;
     width: 20%;
