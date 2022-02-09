@@ -190,7 +190,7 @@ html, body {
     cursor: pointer;
 }
 
-.blog content p {
+.blog-content p {
     text-align: justify;
 }
 
@@ -205,4 +205,10 @@ img {
     width: 100%;
     padding: 0 20px;
     margin: 10px 0;
+}
+
+h4 {
+    font-style: italic;
+    margin-bottom: 0;
+    font-size: 1.1em;
 }
