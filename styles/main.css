@@ -9,7 +9,9 @@
 
 @media only screen and (max-width: 660px) {
      .welcome {
-         min-width: 100%;
+         min-width: 90%;
+         padding: 0;
+         margin: 0;
      }
 
      .row {
@@ -22,6 +24,20 @@
      }
 }
 
+@media only screen and (max-width: 550px) {
+    .main-header {
+        flex-direction: column-reverse;
+        margin-top: 100px;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    .welcome {
+        min-width: 90%;
+        padding: 0;
+        margin: 0;
+    }
+}
 
 
 html, body {
@@ -106,8 +122,10 @@ html, body {
 
 .welcome {
     text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     margin: auto;
-    padding: 70px;
     font-size: 2rem;
     height: 300px;
     width: 70%;
@@ -139,6 +157,15 @@ html, body {
     margin-top: 10px;
     margin-bottom: 20px;
     padding-left: 30px;
+}
+
+.blog-rectangle a{
+    text-decoration: none;
+    color: #7C7953;
+}
+
+.blog-rectangle a:hover{
+    color:#4E4C34;
 }
 
 .blog-box a{
