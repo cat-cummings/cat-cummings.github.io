@@ -24,7 +24,7 @@
 
 
 
-body {
+html, body {
     padding: 0;
     margin: 0;
     background-color: #7C7953;
@@ -101,6 +101,7 @@ body {
 .main-nav {
     flex: 1;
     order: 1;
+    margin-top: auto;
 }
 
 .welcome {
@@ -142,4 +143,13 @@ p {
 
 img {
     max-width: 500px;
+    vertical-align: middle;
+}
+
+.blog-content {
+    background-color: white;
+    color: #7C7953;
+    width: 100%;
+    padding: 0 20px;
+    margin: 10px 0;
 }
