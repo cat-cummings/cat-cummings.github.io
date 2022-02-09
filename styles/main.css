@@ -128,8 +128,22 @@ html, body {
     text-align: center;
     margin: 20px;
     height: 250px;
-    background-color: #53567C;
+    background-color: white;
+    color: #7C7953;
     width: 250px;
+}
+
+.blog-rectangle {
+    background-color: white;
+    color: #7C7953;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    padding-left: 30px;
+}
+
+.blog-box a{
+    text-decoration: none;
+    color: #7C7953;
 }
 
 .blog-box a:hover {
