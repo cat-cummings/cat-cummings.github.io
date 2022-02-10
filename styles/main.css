@@ -23,9 +23,14 @@
          min-width: 90%;
      }
 
-     img {
+     .example {
         width: 375px;
      }
+
+     .main-footer {
+         flex-direction: column;
+     }
+
 }
 
 @media only screen and (max-width: 550px) {
@@ -34,7 +39,7 @@
         margin-top: 100px;
     }
 
-    img {
+    .example {
         width: 275px;
     }
 }
@@ -46,7 +51,7 @@
         margin: 0;
     }
 
-    img {
+    .example {
         width: 175px;
     }
 }
@@ -132,6 +137,32 @@ html, body {
     margin-top: auto;
 }
 
+.main-footer {
+    display: flex;
+    height: 50px;
+    justify-content: space-between;
+    align-items: center;
+    width: auto;
+}
+
+.footer-name {
+    order: 3;
+    text-align: end;
+    width: 33.3%
+}
+
+.footer-thanks {
+    order: 1;
+    width: 33.3%;
+}
+
+.footer-logos {
+    order: 2;
+    width: 33.3%;
+    justify-content: center;
+    display: flex;
+}
+
 .welcome {
     text-align: center;
     display: flex;
@@ -194,7 +225,7 @@ html, body {
     text-align: justify;
 }
 
-img {
+.example {
     max-width: 500px;
     vertical-align: middle;
 }
@@ -212,3 +243,9 @@ h4 {
     margin-bottom: 0;
     font-size: 1.1em;
 }
+
+.logo {
+    height: 30px;
+    padding: 0 20px;
+}
+

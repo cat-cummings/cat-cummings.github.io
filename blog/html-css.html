@@ -26,31 +26,31 @@
         <h3>Introduction</h3>
         <p>Before display: inline-block the common way to arrange content on a page was by using the float attribute. This was especially handy for side navigation bars. If you’re not familiar with float, it removes content from the normal flow of the document, allowing other elements to flow around it. While this can be a great method for arranging content on a page, it’s not so good for aligning blocks vertically. Say, you want a grid of images but the elements are all different heights.</p>
         <figure>
-            <img src="../images/float-example.png" alt="Example of floated elements"/>
+            <img src="../images/float-example.png" class="example" alt="Example of floated elements"/>
             <figcaption>An example of elements using <em>float</em> to arrange them.</figcaption>
         </figure>
         <p>As you can see box 7 gets caught behind box 2 since they are different heights and float causes the elements to flow aroudnd each other.</p>
         <figure>
-            <img src="../images/inline-example.png" alt="Example of inline elements"/>
+            <img src="../images/inline-example.png" class="example" alt="Example of inline elements"/>
             <figcaption>An example of elements using <em>display:inline</em> to arrange them.</figcaption>
         </figure>
         <h3>What is display: inline?</h3>
         <p>When elements are inline it means they are side-by-side in the flow of the document. It is the default for inline elements, such as span. Elements do not move to fit around other elements and are displayed inline inside the current block, on the same line. In inline elements the inner element does not form a block and the element gets dimensions from their parent element. This means that top and bottom margins and paddings are not respected.</p>
         <div class="examples">
-            <img src="../images/inline-css.png" alt="Example of display:inline in css"/>
-            <img src="../images/inline-chrome.png" alt="Example of display:inline in the browser"/>
+            <img class="example" src="../images/inline-css.png" alt="Example of display:inline in css"/>
+            <img src="../images/inline-chrome.png" class="example" alt="Example of display:inline in the browser"/>
         </div>
         <h3>What is display: inline-block?</h3>
         <p>Inline-block is similar to inline with the sole difference that the margins and padding are respected. Also does not add a line break after the element, so elements will sit side by side. This moves other content ot fit around the blocks. An example of a real-use case would be if you wanted to give an inline element a width. Say, to display navigation links beside each other.</p>
         <div class="examples">
-            <img src="../images/inlineblock-css.png" alt="Example of display:inline-block in css"/>
-            <img src="../images/inlineblock-chrome.png" alt="Example of display:inline-block in the browser"/>
+            <img src="../images/inlineblock-css.png" class="example" alt="Example of display:inline-block in css"/>
+            <img src="../images/inlineblock-chrome.png" class="example" alt="Example of display:inline-block in the browser"/>
         </div>
         <h3>What is display: block?</h3>
         <p>As with display: inline-block everything is respected, but the elements are displayed stacked rather than side-by-side (unless otherwise specified e.g. with a float element) and is the default for block level elements such as div.</p>
         <div class="examples">
-            <img src="../images/block-css.png" alt="Example of display:block in css"/>
-            <img src="../images/block-chrome.png" alt="Example of display:block in the browser"/>
+            <img src="../images/block-css.png" class="example" alt="Example of display:block in css"/>
+            <img src="../images/block-chrome.png" class="example" alt="Example of display:block in the browser"/>
         </div>
       </div>
     </body>
