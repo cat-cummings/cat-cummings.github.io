@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>About me</title>
+  <title>JavaScript and the DOM</title>
 </head>
 <body class="container full-height-grow">
   <header class="main-header">
@@ -21,6 +21,77 @@
         </ul>
       </nav>
     </header>
+    <div class="blog-content">
+        <h2>JavaScript and the DOM</h2>
+        
+        <!-- an analogy to describe the difference between HTML and CSS -->
+        <!-- explain control flow and loops using an everyday life example e.g. waking up - brushing teeth -->
+        <!-- describe what the DOM is and an example of how you might interact with it -->
+        <!-- explain the difference between accessing data from arrays and objects -->
+        <!-- Explain what functions are and why they are useful -->
+
+        <h3>What the heck is the DOM?</h3>
+        <p>The DOM (or Document Object Model) can be described as a hierarchical structure that the browser uses to make sense of everything going on in the webpage. The <span class="emphasise-underline">Document</span> is the top most <span class="emphasise-underline">Object</span> in the DOM. The <span class="emphasise-underline">Model</span> is just a way of saying its lots of things all relating to one another in a tree-like structure.</p>
+        <div class="examples">
+            <img class="example" src="../images/DOM-example.png" alt="Example of the hierarchical structure of the DOM" />
+            <figcaption>An example of the hierarchical (tree-like) structure of the DOM</figcaption>
+        </div>
+        <p>Each element in the DOM is called a <span class="emphasise-underline">node</span>, and other languages like CSS and Javascript are used to change what we see on a webpage by accessing the nodes via the DOM.</p>
+        <p class="emphasise-italic">Woah, woah, woah! CSS, HTML, Javascript, I'm confused...</h4>
+        <h3>The difference between CSS and HTML (and JavaScript)</h3>
+        <p>The three main <span class="emphasise-italic">languages</span> used in webpage design are HTML, CSS and JavaScript. In basic terms, HTML is the structure of the page, CSS is how the page looks and JavaScript is how we interact with the page. This might make more sense if we think of them as animals. HTML is the hard working beaver who builds their dam super dooper technically sound and whilst pretty ugly (i mean it's just wood and junk) it does the job of being a damn good dam. CSS is like a unicorn. Everywhere it goes it adds glitter and sparkles and rainbows! This dam is ugly no more! JavaScript is a bit trickier to describe as an animal, but more like the little fairy that comes in and waves her little wand to create a door to get into the dam, or some fairy-lights, or a light up dance floor.</p>
+        <p>Ok, now we know enough about how HTML, CSS and JavaScript all work together through the DOM, it's time to learn some more about JavaScript and a few of the ins and outs of this marvellous language.</p>
+        <h3>Control Flow</h3>
+        <p>Control flow in JS (What we'll be referring to JavaScript as from now on because I'm a bit lazy) is exactly what is sounds like: the flow of the document. JS <span class="emphasise-italic">usually</span> flows from top of the page to bottom of the page. It starts executing code at the top and finishes once it gets to the bottom. If you'll allow me to introduce another analogy: driving to the gym. Control flow of driving to the gym <span class="emphasise-italic">usually</span> executes in the same order. We get into the car, buckle up, plug phone in to play some pump up jams, push the start button, check the mirrors, drive off.</p>
+        <p>I have said <span class="emphasise-italic">usually</span> above since sometimes things can run <span class="emphasise-italic">against the flow</span>. One of these instances is when we have <span class="emphasise-underline">Loops</span> in our code.</p>
+        <h3>Loops! and Loops! and Loops! and Loops!</h3>
+        <p>Say you're on your way to the gym and "Dang it! I forgot my shoes!"" Better head back home and grab them. And then "Oh no! I forgot my towel" turning back around... Oh wow, we just experienced a loop! While this example of a loop is pretty annoying, loops in JS are pretty much the same! But they're not annoying - they're actually pretty useful! Loops are statements in the code that keep running on loop until there's nothing left to loop over.</p>
+        <code>
+            let gymGear = ['bag', 'shoes', 'skipping rope']<br>
+            <br>
+            for (i = 0; i > gymGear.length; i++) { <br>
+                console.log(gymGear[i]) <br>
+            }
+        </code>
+        <p>The above example shows a <span class="emphasise-underline">for loop</span> that iterates (or moves through, one by one) through an array of things I take to the gym. The flow of the code is temporarily interrupted and the loop is executed the amount of times as there are items in the array, then regular flow is resumed. This is just one example of loops. If you're interested in reading more about loops <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Loops_and_iteration">here's a great resource.</a></p>
+        <h3>Accessing data from Arrays vs. Objects</h3>
+        <p>I briefly introduced <span class="emphasise-underline">Arrays</span> in the previous section. An array is identified by square brackets [ ] and is a list of information, be it strings (words), numbers, or even objects or other arrays as well! Arrays store information in a list that have specific positions. (More on this soon.) <span class="emphasise-underline">Objects</span> are like arrays in that they store data, however they are much more complex. They are used when we want to represent a "thing" in our code. For example say I wanted to represent me in my code:</p>
+        <code>
+          let gymGear = ['bag', 'shoes', 'skipping rope']<br>
+          // This is the gymGear array from before <br>
+          <br>
+          let person = { <br>
+            name: 'cat', <br>
+            age: 26, <br>
+            shoes: 'black', <br>
+            skippingRope: 'yellow' <br>
+          }<br>
+          //This object called person contains information about me and my gym gear too!
+        </code>
+        <p>As you can see, arrays and objects are similar in that they both hold information, but they are different in they uses and the information that they can hold.</p>
+        <p>One of the key things about JS is using code to get information from data stored in arrays and objects. How fun! Unfortunately you can't just use the same method to get data from both of these variables. We have to use fun things called <span class="emphasise-italic">dot-notation</span> and <span class="emphasise-italic">bracket-notation</span>. With Objects we can use either dot- or bracket-notation to access information in our objects. But, with arrays, we can only use bracket-notation. Here's a code example to help visualise this!
+        </p>
+        <code>
+          //bracket-notation for array <br>
+          console.log(gymGear[0]) //logs the first (arrays begin at 0) item in our array, bag <br>
+          <br> 
+          //dot-notation for object <br>
+          person.name //prints 'cat' <br>
+          <br>
+          //bracket-notation for object <br>
+          person['name'] //prints 'cat' - note the identifier has to also be a 'string' <br>
+        </code>
+        <p>All of these look pretty similar and they two object ones do the same thing. So why do we need two different types of notation to access objects? One reason to use bracket-notation is that our identifiers can contain spaces and begin with a number and it won't throw an error, where it would if you tried to use dot notation.</p>
+        <h3>Functions</h3>
+        <p>The last thing we're going to talk about today is <span class="emphasise-underline">Functions</span>. A function in JS is a block of code that is designed to perform a particular task. They are particularly helpful when we have bits of code that we want to use more than once. Say we want to print "Hello Cat!"</p>
+        <code>
+          function hello() { <br>
+            print("Hello " + person.name + "!") <br>
+          }
+        </code>
+        <p>Here I have written a function called 'hello' that will print "Hello " and the person.name that it took from the object declared earlier, plus "!" at the end. This can be very helpful if the name of the person changed say every time a new person logged into the website. A handy tip for functions is if you are copying code you've already written then you should turn it into a function!</p>
+        <p>That's all for JavaScript and the Dom today, I hope you had a fun learning experience!</p>
+    </div>
   </body>
   <footer>
     <div class="main-footer">
