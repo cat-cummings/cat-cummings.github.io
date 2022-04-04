@@ -7,7 +7,23 @@
   box-sizing: border-box;
 }
 
-@media only screen and (max-width: 660px) {
+/* desktop/laptop view */
+@media only screen and (min-width: 1200px) {
+    .container {
+      max-width: 1200px
+  }
+}
+
+/* tablet portrait view */
+@media only screen and (max-width: 768px) {
+  .main-header {
+    flex-direction: column-reverse;
+    margin-top: 100px;
+  }
+
+  .example {
+    width: 275px;
+  }
   .welcome {
     min-width: 90%;
     padding: 0;
@@ -32,18 +48,8 @@
   }
 }
 
-@media only screen and (max-width: 550px) {
-  .main-header {
-    flex-direction: column-reverse;
-    margin-top: 100px;
-  }
-
-  .example {
-    width: 275px;
-  }
-}
-
-@media only screen and (max-width: 450px) {
+/* mobile screen view */
+@media only screen and (max-width: 320px) {
   .welcome {
     min-width: 90%;
     padding: 0;
@@ -105,7 +111,6 @@ a:hover {
 }
 
 .container {
-  max-width: 1200px;
   margin: 0 auto;
   padding: 0 40px;
 }
